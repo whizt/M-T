@@ -1,0 +1,20 @@
+nav{
+    height: 199px;
+}
+a{
+    color: black;
+}
+ul.horizontal-list {
+	min-width: 696px;
+	list-style: none;
+	padding-top: 20px;
+    
+}
+ul.horizontal-list li {
+	display: inline;	
+}
+.pop-up{
+    font-family: 'Kreon', serif;
+    color: black;
+
+}
