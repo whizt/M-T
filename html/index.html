@@ -8,107 +8,139 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Kreon&family=Roboto:wght@500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Kreon&family=Poppins:ital,wght@0,400;0,700;1,600&family=Roboto:wght@500&display=swap"
       rel="stylesheet"
     />
     <!-- CSS -->
     <link rel="stylesheet" href="../css/home.css" />
     <link rel="stylesheet" href="../css/navbar.css" />
-    <title>M&T Men's Online Fashion Shop</title>
+    <title>M&T | Men's Online Fashion Shop</title>
   </head>
   <body>
     <div class="line"></div>
+    <!-- Navigation Bar -->
     <nav>
-      <div class="top-navbar">
-        <ul class="horizontal-list">
-          <li><a href="#"> Home </a></li>
-          <li><a href="#"> About Us </a></li>
-          <li><a href="#"> Clothes </a></li>
-          <li><a href="#"> Locations </a></li>
-          <li><a href="#"> Subscribe </a></li>
-        </ul>
+      <div id="top-navbar">
+        <a href="./index.html"> Home </a>
+        <a href="./about.html"> About Us </a>
+        <a href="./clothes.html"> Clothes </a>
+        <a href="./location.html"> Locations </a>
+        <a href="#"> Subscribe </a>
       </div>
-      <div>
-        <ul class="horizontal-list">
-          <li><img src="../image/global-asset/hamburger-close.png" alt="hamburger" /></li>
-          <li>
-            <a href="../html/index.html"></a
-            ><img src="../image/global-asset/Logo.png" alt="logo" id="logo" />
-          </li>
-          <li>Putting Out Your Best Fit</li>
-          <li><input type="text" placeholder="Search Products" /></li>
-          <li>
-            <a href=""
-              ><img src="../image/global-asset/cart.png" alt="cart"
-            /></a>
-          </li>
-          <li>
-            <a href=""
-              ><img src="../image/global-asset/liked.png" alt="liked"
-            /></a>
-          </li>
-        </ul>
+      <div class="head-navbar">
+        <img
+          src="../image/global-asset/hamburger-close.png"
+          alt="hamburger"
+          id="hamburger"
+        />
+        <a href="../html/index.html" id="logo"
+          ><img src="../image/global-asset/Logo.png" alt="logo" />
+          <p id="header">Putting Out Your Best Fit</p>
+        </a>
+        <input id="search" type="text" placeholder="Search Products" />
+        <a href="#" id="cart"
+          ><img src="../image/global-asset/cart.png" alt="cart"
+        /></a>
+
+        <a href="#" id="liked"
+          ><img src="../image/global-asset/liked.png" alt="liked"
+        /></a>
       </div>
       <div class="pop-up">
-        <ul class="horizontal-list">
-          <li><a href="">WHAT'S NEW</a></li>
-          <li><a href="">SHOP</a></li>
-          <li><a href="">BY COLLECTION</a></li>
-          <li><a href="">SALE</a></li>
-        </ul>
+        <a href="">WHAT'S NEW</a>
+        <a href="">SHOP</a>
+        <a href="">BY COLLECTION</a>
+        <a href="">SALE</a>
       </div>
+      <div class="line"></div>
     </nav>
-    <section class="container">
-      <div class="hero">
+    <main>
+      <!-- Hero Section -->
+      <section class="hero container">
+        <div class="space"></div>
+        <div>
+          <!-- <div class="background"></div> -->
           <div class="text">
-              <p id="top-text">Bringing You Men Top Fashion</p>
-              <p id="bottom-text">Redefining your taste</p>
+            <p id="top-text">Bringing You Men Top Fashion</p>
+            <p id="bottom-text">Redefining your taste</p>
           </div>
-        <button class="shop-button">Shop Now</button>
-      </div>
-    </section>
-    <section class="container">
-      <div class="collaboration">
-        <img src="#" alt="m&t x supreme" />
-        <button class="shop-button">Shop Now</button>
-      </div>
-    </section>
-    <section class="container">
-        <div class="trending">
-            <div>
-                <p>Trending</p>
-            </div>
-            <div>
-                <img src="#" alt="trend 1" />
-                <img src="#" alt="trend 2" />
-                <img src="#" alt="trend 3" />
-            </div>
-            <div>
-                <button class="shop-button">Shop Now</button>
-            </div>
+          <a href="#" class="button-shop">Shop Now</a>
         </div>
-    </section>
-    <section class="container">
-        <div class="limited">
-            <div>
-                <img src="#" alt="limited-1" />
-                <button class="shop-button">Shop Now</button>
-            </div>
-            <div>
-                <p>For Limited Time Only</p>
-                <p>30% off Sale</p>
-                <img src="#" alt="limited-2" />
-                <button class="shop-button">Shop Now</button>
-            </div>
-        </div>
+      </section>
+      <section class="others">
+        <div class="space"></div>
+        <section class="collaboration container">
+          <div>
+            <img src="../image/home-asset/collab.jpg" alt="m&t x supreme" />
+            <a href="#" class="button-shop">Shop Now</a>
+          </div>
         </section>
-        <section class="">
-      <img src="#" alt="" />
-      <img src="#" alt="" />
-      <img src="#" alt="" />
-    </section>
-    <footer class="container">
-        Footer
-    </footer>
+        <div class="space"></div>
+
+        <!-- Trending Item Section -->
+
+        <section class="trending container">
+          <div>
+            <div id="header">
+              <p>Trending</p>
+            </div>
+            <div>
+              <img src="../image/home-asset/trending1.jpg" alt="trend 1" />
+              <img src="../image/home-asset/trending2.png" alt="trend 2" />
+              <img src="../image/home-asset/trending3.png" alt="trend 3" />
+            </div>
+            <div>
+              <a href="#" class="button-shop">Shop Now</a>
+            </div>
+          </div>
+        </section>
+        <div class="space"></div>
+
+        <!-- Limited Item Section -->
+
+        <section class="limited container">
+          <div>
+            <div class="image-corner">
+              <img src="../image/home-asset/limited1.png" alt="limited-1" />
+              <a href="#" class="button-shop">Shop Now</a>
+            </div>
+            <div class="image-corner">
+              <p id="top-text">For Limited Time Only</p>
+              <p id="bottom-text">30% off Sale</p>
+              <img src="../image/home-asset/limited2.png" alt="limited-2" />
+              <a href="#" class="button-shop">Shop Now</a>
+            </div>
+          </div>
+        </section>
+        <div class="space"></div>
+
+        <!-- Item Collections Section -->
+
+        <section class="collection container">
+          <div>
+            <img
+              src="../image/home-asset/collection1.jpg"
+              alt="collection1"
+              class="collection"
+            />
+            <img
+              src="../image/home-asset/collection2.jpg"
+              alt="collection2"
+              class="collection"
+            />
+            <img
+              src="../image/home-asset/collection3.jpg"
+              alt="collection3"
+              class="collection"
+            />
+          </div>
+        </section>
+      </section>
+    </main>
+    <div class="space"></div>
+
+    <!-- Footer -->
+
+    <footer class="container">Footer</footer>
   </body>
 </html>

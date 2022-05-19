@@ -1,3 +1,4 @@
+/* GENERAL */
 *{
 	margin: 0;
 	padding: 0;
@@ -8,33 +9,88 @@
 body{
     background-color: #F4F3F1;
 }
-
 .container{
     width: 100vw;
     height: 100vh;
 }
+.others{
+    margin-left: 90px;
+    margin-right: 90px;
+}
+.space{
+    width: 100vw;
+    height: 100px;
+}
+.button-shop{
+    font-family: 'Poppins', sans-serif;
+    background-color: #FFFFFF;
+    border: 1.5px solid #000000;
+    color: #000000;
+    padding: 8px 36px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 38px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+/* HERO SECTION */
 .hero{
     width: 100vw;
-    height: 100vh;
+    height: 120vh;
     background-repeat: no-repeat;
     background-image: url("../image/home-asset/background1.jpg");
     background-size: 100%;
 }
+.hero .space{
+    height: 132px;
+    width: 100vw;
+    background-color: #F4F3F1;
+}
 .text{
     color: #F4F3F1;
     font-family: Perpetua, serif;
-    font-weight: bold
+    font-weight: bold;
 }
 .hero #top-text{
-    text-size-adjust: auto;
+    /* text-size-adjust: auto; */
     font-size: 90px;
 }
 .hero #bottom-text{
     text-size-adjust: none;
     font-size: 75px;
 }
-#shop-button{
-    width: 200px;
-    height: 50px;
-    color: white;
+/* TRENDING ITEM SECTION */
+
+/* LIMITED ITEM SECTION */
+.limited image{
+    width: 420px;
+    height: 630px;
+}
+.limited .image-corner{
+    width: 50vw;
+    height: 100vh;
+}
+.limited #top-text{
+    
+    
+    font-family: 'Perpetua';
+    font-weight: bold;
+    font-size: 75px;
+    line-height: 86px;
+    text-align: right;
+    color: #000000;
+}
+.limited #bottom-text{
+    color: #FF0000;
+    font-weight: bold;
+    font-size: 90px;
+    line-height: 115px;
+    text-align: right;
+}
+/* ITEM COLLECTION SECTION */
+img.collection{
+    filter: drop-shadow(0px 10px 15px rgba(0, 0, 0, 0.25));
 }
