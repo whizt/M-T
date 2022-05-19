@@ -1,9 +1,10 @@
 nav{
     /* height: 199px; */
-    width: 100vw;
+    width: 100%;
     position: fixed;
     background-color: #F4F3F1;
     border-radius: 5px;
+    z-index: 10000;
 }
 a{
     color: black;
