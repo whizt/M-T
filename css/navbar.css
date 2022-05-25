@@ -1,66 +1,115 @@
 nav{
-    /* height: 199px; */
-    width: 100%;
     position: fixed;
+    width: 100%;
     background-color: #F4F3F1;
-    border-radius: 5px;
     z-index: 10000;
 }
-a{
+.top-navbar{  
+    padding: 0.5% 2%;
+    font-size: 16px;
+    justify-content: space-between;
+    align-items: center;
+}
+.top-navbar .nav-links{
+    flex: 1;
+    text-align: right;
+}
+.top-navbar .nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 0px 12px;
+    position: relative;
     color: black;
 }
-
-#top-navbar{
-    height: 36px;
+.top-navbar .nav-links ul li a{
     font-family: 'Poppins', sans-serif;
-    font-size: 16px;
-    text-align: right;
+    text-decoration: none;
+    color: black;
+}
+.top-navbar .nav-links ul li a:hover{
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline;
 }
 .head-navbar{
     display: flex;
+    padding: 0.5% 2.8%;
     height: 96px;
-    width: 100vw;
-    align-items: center;
-    justify-content: center;
-}
-.head-navbar #hamburger{
-    display: flex;
-    align-items: flex-start;
-}
-.head-navbar #logo{
-    display: flex;
+    justify-content: space-between;
     align-items: center;
 }
-.head-navbar #search{
-
+.head-navbar .logo{
+    display: flex; 
+    padding-left: 100px;
+    align-items: center;
 }
-.head-navbar #cart{
-
+.head-navbar .logo img{
+    width: 68px;
 }
-.head-navbar #liked{
-
-}
-#pop-up{
-    height: 67px;
-}
-.head-navbar #header{
+.head-navbar .logo p{
     font-family: 'Roboto', sans-serif;
     font-size: 30px;
-}
-.pop-up{
-    display: flex;
-    font-family: 'Kreon', serif;
+    padding-left: 30px;
     color: black;
-    font-size: 25px;
-    align-items: center;
-    justify-content: center;
 }
+.head-navbar #hamburger{
+    height: 36px;
+    width: 25.8px;
+    cursor: pointer;
+}
+/* .head-navbar #hamburger::after{
+    transform: rotate(90deg);
+    transition: 2s;
+} */
+.dropdown{
+    padding: 20px 2%;
+    font-size: 16px;
+    justify-content: space-between;
+    align-items: center;
+}
+.dropdown .nav-links{
+    flex: 1;
+    /* padding: 10px; */
+    text-align: center;
+    /* justify-content: space-between;
+    align-items: center; */
+}
+.dropdown ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 0px 12px;
+    position: relative;
+    color: black;
+}
+.dropdown ul li a{
+    font-family: 'Kreon', serif;
+    font-size: 25px;
+    text-decoration: none;
+    color: black;
+}
+/* animation hamburger not done */
+/* .hamburg{
+    -webkit-animation-name: openAnimation;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease;
+    -webkit-animation-fill-mode: forwards;
+  }
+  
+  @-webkit-keyframes openAnimation {
+    from {
+      -webkit-transform: rotate(0deg) ;
+    }
+    to {
+      -webkit-transform: rotate(90deg);
+    }
+  } */
+/* 
 nav .line{
-    /* position: absolute; */
+    position: absolute;
     width: 100vw;
     height: 0px;
     left: 0px;
     top: 163px;
-
     border: 2px solid #5B5B5B;
-}
+} */
