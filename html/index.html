@@ -34,16 +34,14 @@
           </div>
         </div>
         <div class="head-navbar">
-          <!-- <div class="hamburg"> -->
-            
-            <img
-              src="../image/global-asset/hamburger-open.png"
-              alt="hamburger"
-              id="hamburger"
-              />
-              <!-- onclick="open()"   -->
-          <!-- </div> -->
-          
+          <img
+            src="../image/global-asset/hamburger.png"
+            alt="hamburger"
+            id="myDropbtn"
+            class="dropbtn"
+            onclick="myFunction()"
+            class="dropbtn"
+          />
           <a href="../html/index.html" class="logo"
             ><img src="../image/global-asset/Logo.png" alt="logo" />
             <p>Putting Out Your Best Fit</p>
@@ -58,34 +56,124 @@
             /></a>
           </div>
         </div>
-        <div class="dropdown">
+        <div id="myDropdown" class="dropdown-content">
           <div class="nav-links">
             <ul>
-              <li><a href="">WHAT'S NEW</a></li>
-              <li><a href="">SHOP</a></li>
-              <li><a href="">BY COLLECTION</a></li>
-              <li><a href="">SALE</a></li>
+              <li class="new links"><p>WHAT'S NEW</p></li>
+              <li class="shop links"><p>SHOP</p></li>
+              <li class="collection links"><p>BY COLLECTION</p></li>
+              <li class="sale links"><p>SALE</p></li>
+              <div class="new-content nav-links-content">
+                <ul>
+                  <li><a href="./clothes.html">Shirt</a></li>
+                </ul>
+                <ul>
+                  <li><a href="./clothes.html">Jeans</a></li>
+                </ul>
+                <ul>
+                  <li><a href="./clothes.html">Boots</a></li>
+                </ul>
+                <ul>
+                  <li><a href="./clothes.html">Hoodie</a></li>
+                </ul>
+                <ul>
+                  <li><a href="./clothes.html">Shoes & Accessories</a></li>
+                </ul>
+              </div>
+              <div class="shop-content nav-links-content">
+                <ul>
+                  <li><a href="./clothes.html">T-Shirt & Vests</a></li>
+                  <li><a href="./clothes.html">Lounge Wear</a></li>
+                  <li><a href="./clothes.html">Hoodies & Sweatshirts</a></li>
+                </ul>
+                <ul>
+                  <li><a href="./clothes.html">Basics</a></li>
+                  <li><a href="./clothes.html">Hats</a></li>
+                  <li><a href="./clothes.html">Socks</a></li>
+                </ul>
+                <ul>
+                  <li><a href="./clothes.html">Jeans</a></li>
+                  <li><a href="./clothes.html">Sportwear</a></li>
+                  <li><a href="./clothes.html">Blazers & Suits</a></li>
+                </ul>
+                <ul>
+                  <li><a href="./clothes.html">Shirts</a></li>
+                  <li><a href="./clothes.html">Jackets & Coats</a></li>
+                  <li><a href="./clothes.html">Premium Quality</a></li>
+                </ul>
+                <ul>
+                  <li><a href="./clothes.html">Trousers</a></li>
+                  <li><a href="./clothes.html">Underwear</a></li>
+                  <li><a href="./clothes.html">View All</a></li>
+                </ul>
+                <ul>
+                  <li><a href="./clothes.html">Shorts</a></li>
+                  <li><a href="./clothes.html">Shoes</a></li>
+                </ul>
+              </div>
+              <div class="collection-content nav-links-content">
+                <ul>
+                  <li><a href="./clothes.html">M&T x SUPREME</a></li>
+                  <li><a href="./clothes.html">M&T x KAWS</a></li>
+                  <li><a href="./clothes.html">M&T x MARVEL</a></li>
+                </ul>
+                <ul>
+                  <li><a href="./clothes.html">M&T Moshi</a></li>
+                  <li><a href="./clothes.html">M&T Sakura</a></li>
+                  <li><a href="./clothes.html">M&T x NIKE</a></li>
+                </ul>
+                <ul>
+                  <li><a href="./clothes.html">M&T Animal</a></li>
+                  <li><a href="./clothes.html">M&T Starcost</a></li>
+                  <li><a href="./clothes.html">M&T x GUCCI</a></li>
+                </ul>
+                <ul>
+                  <li><a href="./clothes.html">M&T Spaceship</a></li>
+                  <li><a href="./clothes.html">M&T Winter</a></li>
+                </ul>
+                <ul>
+                  <li><a href="./clothes.html">M&T Summer</a></li>
+                  <li><a href="./clothes.html">M&T Spring</a></li>
+                </ul>
+              </div>
+              <div class="sale-content nav-links-content">
+                <ul>
+                  <li><a href="./clothes.html">Shirt</a></li>
+                </ul>
+                <ul>
+                  <li><a href="./clothes.html">Jeans</a></li>
+                </ul>
+                <ul>
+                  <li><a href="./clothes.html">Boots</a></li>
+                </ul>
+                <ul>
+                  <li><a href="./clothes.html">Hoodie</a></li>
+                </ul>
+                <ul>
+                  <li><a href="./clothes.html">Shoes & Accessories</a></li>
+                </ul>
+              </div>
             </ul>
           </div>
+          <!-- <div class="nav-links-content"> -->
+
+          <!-- </div> -->
         </div>
-        <div class="line"></div>
+        <div class="underline"></div>
       </nav>
-        <div class="text-box">
-          <!-- <div class="background"></div> -->
-          <div class="text">
-            <p id="top-text">Bringing You Men Top Fashion</p>
-            <p id="bottom-text">Redefining your taste</p>
-          </div>
-          <a href="#" class="button-shop">Shop Now</a>
+      <div class="text-box">
+        <!-- <div class="background"></div> -->
+        <div class="text">
+          <p id="top-text">Bringing You Men Top Fashion</p>
+          <p id="bottom-text">Redefining your taste</p>
         </div>
+        <a href="#" class="button-shop">Shop Now</a>
+      </div>
     </section>
-    
-      
+
     <main>
       <!-- Hero Section -->
-      <section class="hero container">
-        
-      </section>
+      <section class="hero container"></section>
       <section class="others">
         <div class="space"></div>
         <section class="collaboration container">
@@ -138,11 +226,10 @@
         <section class="collection container">
           <div>
             <a href="">
-
               <img
-              src="../image/home-asset/collection1.jpg"
-              alt="collection1"
-              class="collection"
+                src="../image/home-asset/collection1.jpg"
+                alt="collection1"
+                class="collection"
               />
             </a>
             <!-- <img
