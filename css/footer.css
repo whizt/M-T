@@ -1,6 +1,12 @@
 footer{
+    /* padding: 15% 0; */
+    
+}
+.footer{
+    display: block;
+    position: static;
     background-color: #1A1A1A;
-    width: 100%;
-    padding: 15% 0;
-
+    width: 100vw;
+    height: 15vh;
+    
 }
