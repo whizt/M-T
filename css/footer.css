@@ -1,12 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Rambla:wght@400;700&family=Sumana:wght@700&family=Telex&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #fcfcfc;
+}
+
 footer{
-    /* padding: 15% 0; */
+    position: absolute;
+    background: #1A1A1A;
+    /* background-color: aqua; */
+    height: auto;
+    width: 98.9vw;
+    padding-top: 40px;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+    padding: 35px 0;
+}
+
+.footer-content .container{
+    max-width: 1170px;
+    margin: auto;
+}
+
+.footer-content .row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-content ul{
+    list-style: none;
+}
+
+.footer-col{
+    padding: 0 67px;
+}
+
+.footer-col h4{
+    font-size: 24px;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    font-weight: 700;
+    position: relative;
+    font-family: 'Rambla', sans-serif;
+    padding: 0 120px 0 0;
+}
+
+.footer-col ul li::not(:last-child){
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a{
+    font-family: 'Rambla', sans-serif;
+    font-size: 20px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    margin-bottom: 5px;
+    color: #bbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover{
+    color: #ffffff;
+}
+
+.footer-content .socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 4rem 0 0 0;
+}
+
+.footer-content .socials li{
+    margin: 0 10px;
+}
+
+.footer-content .socials a{
+    text-decoration: none;
+    color: rgba(248, 248, 248, 1);
+    padding: 10px 10px;
+    font-size: 30px;
+    /* background-color: aqua; */
     
 }
-.footer{
-    display: block;
-    position: static;
-    background-color: #1A1A1A;
-    width: 100vw;
-    height: 15vh;
-    
+
+.footer-content .socials a i{
+    transition: color .4s ease;
+}
+
+.footer-content .socials a:hover i{
+    color: rgba(248, 248, 248, 0.5);
+}
+
+.footer-bottom{
+    background: #1A1A1A;
+    color: #fcfcfc;
+    padding-bottom: 0.5rem;
+    width: 98.9vw;
+    text-align: center;
+}
+
+.footer-bottom p{
+    padding-top: 10px;
+    font-size: 20px;
+    font-family: 'Telex', sans-serif;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.footer-bottom span{
+    text-transform: capitalize;
+    opacity: .5;
+    font-weight: 700;
+    font-family: 'Sumana', serif;
+}
+
+@media(max-width: 1130px){
+    .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
+        /* background-color: blueviolet; */
+    }
+}
+
+@media(max-width: 574px){
+    .footer-col{
+        /* background-color: aqua; */
+        width: 100%;
+    }
 }
