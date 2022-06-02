@@ -6,27 +6,18 @@ function myFunction() {
 }
 
 // Close the dropdown if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
+window.onclick = function (event) {
+  if (!event.target.matches(".dropbtn")) {
     var dropclick = document.getElementsByClassName("dropbtn");
     var dropdowns = document.getElementsByClassName("dropdown-content");
     var i;
     for (i = 0; i < dropdowns.length; i++) {
       var openDropdown = dropdowns[i];
       var rotateDropbtn = dropclick[i];
-      // $(this).css("transform","rotate(90deg)");
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-        rotateDropbtn.classList.remove('rotate');
+      if (openDropdown.classList.contains("show")) {
+        openDropdown.classList.remove("show");
+        rotateDropbtn.classList.remove("rotate");
       }
     }
   }
-}
-
-$( ".dropbtn" ).onclick(function(event) {
-  if (  $( this ).css( "transform" ) == 'none' ){
-      $(this).css("transform","rotate(90deg)");
-  } else {
-      $(this).css("transform","" );
-  }
-});
+};

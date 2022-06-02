@@ -1,168 +1,151 @@
-nav{
-    position: fixed;
-    width: 100%;
-    background-color: #F4F3F1;
-    z-index: 10000;
-    overflow: hidden;
+nav {
+  position: fixed;
+  width: 100%;
+  background-color: #f4f3f1;
+  z-index: 10000;
+  overflow: hidden;
 }
-.top-navbar{  
-    padding: 0.5% 2%;
-    font-size: 16px;
-    justify-content: space-between;
-    align-items: center;
+.top-navbar {
+  padding: 0.5% 2%;
+  font-size: 16px;
+  justify-content: space-between;
+  align-items: center;
 }
-.top-navbar .nav-links{
-    flex: 1;
-    text-align: right;
+.top-navbar .nav-links {
+  flex: 1;
+  text-align: right;
 }
-.top-navbar .nav-links ul li{
-    list-style: none;
-    display: inline-block;
-    padding: 0px 12px;
-    position: relative;
-    color: #1C1C1C;
+.top-navbar .nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 0px 12px;
+  position: relative;
+  color: #1c1c1c;
 }
-.top-navbar .nav-links ul li a{
-    font-family: 'Poppins', sans-serif;
-    text-decoration: none;
-    color: #1C1C1C;
+.top-navbar .nav-links ul li a {
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  color: #1c1c1c;
 }
-.top-navbar .nav-links ul li a:hover{
-    font-weight: bold;
-    font-style: italic;
-    text-decoration: underline;
+.top-navbar .nav-links ul li a:hover {
+  font-weight: bold;
+  font-style: italic;
+  text-decoration: underline;
 }
-.head-navbar{
-    display: flex;
-    padding: 0.5% 2.8%;
-    height: 96px;
-    justify-content: space-between;
-    align-items: center;
+.head-navbar {
+  display: flex;
+  padding: 0.5% 2.8%;
+  height: 96px;
+  justify-content: space-between;
+  align-items: center;
 }
-.head-navbar .logo{
-    display: flex; 
-    padding-left: 100px;
-    align-items: center;
+.head-navbar .logo {
+  display: flex;
+  padding-left: 100px;
+  align-items: center;
 }
-.head-navbar .logo img{
-    width: 68px;
+.head-navbar .logo img {
+  width: 68px;
 }
-.head-navbar .logo p{
-    font-family: 'Roboto', sans-serif;
-    font-size: 30px;
-    /* padding-left: 300px; */
-    color: #1C1C1C;
+.head-navbar .logo p {
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  /* padding-left: 300px; */
+  color: #1c1c1c;
 }
-.head-navbar #hamburger{
-    height: 36px;
-    width: 25.8px;
-    cursor: pointer;
+.head-navbar #hamburger {
+  height: 36px;
+  width: 25.8px;
+  cursor: pointer;
 }
-.dropbtn{
-    cursor: pointer;
+.dropbtn {
+  cursor: pointer;
 }
-.rotate{
-    transform: rotate(90deg);
-    transition: ease 0.1s;
-    -webkit-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
- }
-.dropdown-content{
-    display: none;
-    padding: 20px 5%;
-    font-size: 16px;
-    justify-content: space-between;
-    align-items: center;
+.rotate {
+  transform: rotate(90deg);
+  transition: ease 0.1s;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
 }
-.dropdown-content .nav-links{
-    flex: 1;
-    text-align: center;
+.dropdown-content {
+  display: none;
+  padding: 20px 5%;
+  font-size: 16px;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
-.dropdown-content .nav-links ul li.links{
-    list-style: none;
-    display: inline-block;
-    padding: 0px 12px;
-    position: relative;
-    color: #404040;
-    font-family: 'Kreon', serif;
-    font-size: 25px;
+.dropdown-content .nav-links {
+  flex: 1;
+  text-align: center;
 }
-.dropdown-content .nav-links ul li.links:hover{
-    color: #000000;
-    cursor: default;
+.dropdown-content .nav-links ul li.links {
+  list-style: none;
+  display: inline-block;
+  padding: 0px 12px;
+  position: relative;
+  color: #404040;
+  font-family: "Kreon", serif;
+  font-size: 25px;
 }
-.nav-links-content{
-    display: none;
-    /* position: relative; */
-    padding-top: 2%;
-    font-size: 12px;
+.dropdown-content .nav-links ul li.links:hover {
+  color: #000000;
+  cursor: default;
 }
-/* .nav-links-content.new-content {
-    display: none;
-    position: relative;
-    padding-top: 2%;
-    font-size: 12px;
-} */
-.dropdown-content .new:hover ~ .new-content{
-    display: block;z-index: 10000;transition: ease;
+.nav-links-content {
+  display: none;
+  opacity: 0%;
+  /* position: relative; */
+  padding-top: 2%;
+  font-size: 12px;
 }
-/* .nav-links-content.shop-content{
-    display: none;
-    position: relative;
-    padding-top: 2%;
-    font-size: 12px;
-} */
-.dropdown-content .shop:hover ~ .shop-content{
-    display: block;z-index: 10000;transition: ease;
+.dropdown-content .new:hover ~ .new-content {
+  display: block;
+  opacity: 100%;
+  z-index: 10000;
+  transition: ease;
 }
-/* .nav-links-content.collection-content{
-    display: none;
-    position: relative;
-    padding-top: 2%;
-    font-size: 12px;
-} */
-.dropdown-content .collection:hover ~ .collection-content{
-    display: block;z-index: 10000;transition: ease;
+.dropdown-content .shop:hover ~ .shop-content {
+  display: block;
+  z-index: 10000;
+  transition: ease;
 }
-/* .nav-links-content.sale-content{
-    display: none;
-    position: relative;
-    padding-top: 2%;
-    font-size: 12px;
-} */
-.dropdown-content .sale:hover ~ .sale-content{
-    display: block;z-index: 10000;transition: ease;
+.dropdown-content .collection:hover ~ .collection-content {
+  display: block;
+  z-index: 10000;
+  transition: ease;
 }
-.nav-links-content ul{
-    display: inline-block;
-    /* align-items: center;
-    justify-content: center; */
+.dropdown-content .sale:hover ~ .sale-content {
+  display: block;
+  z-index: 10000;
+  transition: ease;
 }
-.nav-links-content ul li{
-    display: block;
-    list-style: none;
-    padding: 0px 12px;
-    position: relative;
-    padding: 0px 20px;   
-    text-align: left;
+.nav-links-content ul {
+  display: inline-block;
 }
-.nav-links-content ul li a:hover{
-    transition: ease;
-    color: #464646;
+.nav-links-content ul li {
+  display: block;
+  list-style: none;
+  padding: 0px 12px;
+  position: relative;
+  padding: 0px 20px;
+  text-align: left;
 }
-.nav-links-content ul li a{
-    /* text-align: end; */
-    font-family: 'Perpetua';
-    font-size: 25px;
-    text-decoration: none;
-    color: #606060;
+.nav-links-content ul li a:hover {
+  transition: ease;
+  color: #464646;
+}
+.nav-links-content ul li a {
+  font-family: "Perpetua";
+  font-size: 25px;
+  text-decoration: none;
+  color: #606060;
 }
 .show {
-    display: block;transition: ease;
+  display: block;
 }
-.underline{
-    background-color: #000000;
-    width: 100%;
-    height: 5px;
-
+.underline {
+  background-color: #000000;
+  width: 100%;
+  height: 5px;
 }
