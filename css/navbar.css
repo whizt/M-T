@@ -2,6 +2,8 @@ nav{
     position: fixed;
     width: 100%;
     background-color: #F4F3F1;
+    /* background-color: aqua */
+    /* padding-bottom: 15px; */
     z-index: 10000;
     overflow: hidden;
 }
@@ -11,6 +13,20 @@ nav{
     justify-content: space-between;
     align-items: center;
 }
+.background-bar{
+    background-color: rgba(216, 216, 216, 1);
+    width: 100%;
+    height: 4px;
+    /* display: flex; */
+}
+
+#progress-bar{
+    --progress: 0;
+    height: 4px;
+    width: var(--progress);
+    background-color: black;
+}
+
 .top-navbar .nav-links{
     flex: 1;
     text-align: right;
@@ -34,10 +50,11 @@ nav{
 }
 .head-navbar{
     display: flex;
-    padding: 0.5% 2.8%;
+    padding: 3% 2.8%;
     height: 96px;
     justify-content: space-between;
     align-items: center;
+    /* background-color: aqua; */
 }
 .head-navbar .logo{
     display: flex; 
@@ -161,7 +178,7 @@ nav{
     display: block;transition: ease;
 }
 .underline{
-    background-color: #000000;
+    /* background-color: #000000; */
     width: 100%;
     height: 5px;
 
