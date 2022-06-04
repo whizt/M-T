@@ -1,0 +1,12 @@
+<link rel="stylesheet" href="../css/loader.css" />
+<div class="loading">
+      <div class="gooey">
+        <span class="dot"></span>
+        <div class="dots">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+<script src="../js/loader.js"></script>
