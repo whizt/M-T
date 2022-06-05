@@ -5,8 +5,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright&family=Metal&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rambla:wght@400;700&family=Sumana:wght@700&family=Telex&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rambla:wght@400;700&family=Sumana:wght@700&family=Telex&display=swap&family=Voces&display=swap');
 
+:root {
+    --gradient: linear-gradient(90deg, #6F0000, #220101);
+    --gradient2: linear-gradient(90deg, #220101, #6F0000);
+  
+  }
 
 *{
     margin: 0;
@@ -29,7 +34,6 @@ body{
     top: 331px;
     
     font-style: normal;
-    font-size: 50px;
     line-height: 140.31%;
 }
 
@@ -48,6 +52,7 @@ body{
 .top1 .left h1{
     font-family: 'Playfair Display', serif;
     font-size: 35px;
+    /* width: 100%; */
     line-height: 60px;
     letter-spacing: 2.5px;
 }
@@ -76,34 +81,18 @@ body{
     background-position: center center;
 }
 
-.second-line .left{
-    position: relative;
-    height: 480px;
-    min-width: 215px;
-    background-color: 
-    rgba(111, 0, 0, 1);
-}
-
-.second-line .right{
-    position: relative;
-    margin-left: auto;
-    height: 480px;
-    width: 215px;
-    background-color: rgba(34, 1, 1, 1);
-}
-
 .second-line .mid{
-    margin-left: auto;
+    margin: auto;
 }
 
 .second-line .container .mid .text h1{
     font-family: 'Volkhov', serif;
-    font-size: 4.5rem;
+    font-size: 4.733727810650888vw;
 }
 
 .second-line .container .mid .text p{
     font-family: 'Playfair Display', serif;
-    font-size: 1.8em;
+    font-size: 1.893491124260355vw;
     max-width: 25em;
     text-align: justify;
     padding-top: 50px;
@@ -117,8 +106,10 @@ body{
 
 .second-line .container .inner-container{
     display: flex;
+    /* background-color: aqua; */
     align-items: center;
     justify-content: center;
+    /* font-size: 100%; */
 }
 
 .line-box {
@@ -257,13 +248,33 @@ body{
     text-align: center;    
     font-family: 'Archivo Narrow', sans-serif;
     font-size: 1.9rem;
-    margin-top: 30px;
+    margin-top: 14rem;
     margin-bottom: -15px;
 }
+
 .ourTeam-container p{
     text-align: center;    
     font-size: 1.7rem;
     font-family: 'Metal', cursive;
+}
+
+.founder .responsive{
+    cursor: pointer;
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    margin: auto;
+    filter: grayscale(100%);
+    transition: all 800ms;
+}
+
+.founder .founder-satu .responsive{
+    margin-left: -13px;
+}
+
+.founder .responsive:hover{
+    transform: scale(120%);
+    filter: grayscale(0%);
 }
 
 .ourTeam-container .founder-satu{
@@ -300,7 +311,6 @@ body{
 
 .bottom-container .inner-container{
     position: relative;
-    /* background-color: aqua; */
     margin: 0 0 10rem;
 }
 
@@ -346,6 +356,92 @@ body{
     flex: 25%;
     max-width: 25%;
 }
+
+.s-container {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    overflow: hidden;
+    background-color: #6F0000;
+}
+.scrolling {
+    position: absolute;
+    display: block;
+    margin: auto auto;
+    white-space: nowrap;
+    overflow: hidden;
+    min-width: 100%;
+    height: 100%;
+}
+.scrolling h2 {
+    color: rgba(183, 183, 183, 1);
+    display: inline-block;
+    padding-left: 100%;
+    font-family: 'Voces', cursive;
+    text-align: center;
+    white-space: nowrap;
+    min-width: 100%;
+    height: 100%;
+    line-height: normal;
+    font-size: 35px;
+    animation: scrolling 12s linear infinite;
+}
+.scrolling2 h2 {
+    animation-delay: 6s;
+}
+
+.scrolling h2 span{
+    color: rgba(255, 255, 255, 1);
+}
+
+@keyframes scrolling {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(-100%, 0);
+    }
+}
+
+.content {
+    position: relative;
+    width: 30.11204481792717vh;
+    box-shadow: 0 0 3em rgba(0,0,0,.15);
+}
+
+.title {
+    display: flex;
+    height: 67.22689075630252vh;
+    color: #ee6352;
+    background-image: var(--gradient);
+    background-clip: text;
+    color: transparent;
+    background-size: 300%;
+    transition: background-position 1s;
+    animation: min 3s infinite;
+  }
+
+.title2 {
+    display: flex;
+    height: 67.22689075630252vh;
+    color: #ee6352;
+    background-image: var(--gradient2);
+    background-clip: text;
+    color: transparent;
+    background-size: 300%;
+    transition: background-position 1s;
+    animation: min 3s infinite;
+  }
+  
+  @keyframes min{
+    0% {background-position: left}
+    50% {background-position: right}
+    100% {background-position: left}
+  }
 
 @media screen and (max-width: 800px) {
     /* .top1 .left h1{

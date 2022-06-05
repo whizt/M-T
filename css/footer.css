@@ -7,14 +7,9 @@
     box-sizing: border-box;
 }
 
-body{
-    background: #fcfcfc;
-}
-
 footer{
     position: absolute;
     background: #1A1A1A;
-    /* background-color: aqua; */
     height: auto;
     width: 98.9vw;
     padding-top: 40px;
