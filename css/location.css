@@ -93,4 +93,9 @@ body{
 }
 
 
+.location-container{
+    display: -moz-grid;
+}
+
+
 
