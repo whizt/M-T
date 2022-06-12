@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Kreon&family=Poppins:ital,wght@0,400;0,700;1,600&family=Roboto:wght@500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Kreon&family=Poppins:ital,wght@0,400;0,700;1,600&family=Roboto:wght@500&family=Patua+One&display=swap"
       rel="stylesheet"
     />
     <!-- Footer -->
@@ -190,116 +190,442 @@
       <div class="head">
         <div class="left-col">
           <div>
+            <div class="line"></div>
             <div class="dropdown">
-              <h1>New Arrivals</h1>
-              <ul>
-                <li>bb</li>
-                <li>cc</li>
-              </ul>
+              <button class="collapsible">New Arrivals</button>
+              <div class="collapse-content">
+                <ul>
+                  <li><a href="">Tops Collection</a></li>
+                  <li><a href="">Bottoms Collection</a></li>
+                </ul>
+              </div>
             </div>
+            <div class="line"></div>
             <div class="dropdown">
-              <h1>Trending</h1>
-              <ul>
-                <li>bb</li>
-                <li>cc</li>
-              </ul>
+              <button class="collapsible">Trending</button>
+              <div class="collapse-content">
+                <ul>
+                  <li><a href="">Outfit Sets</a></li>
+                  <li><a href="">Suit Collection</a></li>
+                </ul>
+              </div>
             </div>
+            <div class="line"></div>
             <div class="dropdown">
-              <h1>Top</h1>
-              <ul>
-                <li>bb</li>
-                <li>cc</li>
-              </ul>
+              <button class="collapsible">Top</button>
+              <div class="collapse-content">
+                <ul>
+                  <li><a href="">T-Shirts</a></li>
+                  <li><a href="">Polo Shirts</a></li>
+                  <li><a href="">Hoodies</a></li>
+                </ul>
+              </div>
             </div>
+            <div class="line"></div>
             <div class="dropdown">
-              <h1>Bottom</h1>
-              <ul>
-                <li>bb</li>
-                <li>cc</li>
-              </ul>
+              <button class="collapsible">Bottom</button>
+              <div class="collapse-content">
+                <ul>
+                  <li><a href="">Shorts</a></li>
+                  <li><a href="">Jeans</a></li>
+                  <li><a href="">Denim</a></li>
+                </ul>
+              </div>
             </div>
+            <div class="line"></div>
             <div class="dropdown">
-              <h1>Size</h1>
-              <ul>
-                <li>bb</li>
-                <li>cc</li>
-              </ul>
+              <button class="collapsible">Size</button>
+              <div class="collapse-content">
+                <ul>
+                  <li><a href="">XS</a></li>
+                  <li><a href="">S</a></li>
+                  <li><a href="">M</a></li>
+                  <li><a href="">L</a></li>
+                  <li><a href="">XL</a></li>
+                </ul>
+              </div>
             </div>
+            <div class="line"></div>
             <div class="dropdown">
-              <h1>Price</h1>
-              <ul>
-                <li>bb</li>
-                <li>cc</li>
-              </ul>
+              <button class="collapsible">Price</button>
+              <div class="collapse-content">
+                <ul class="price">
+                  <li><a href="">Rp100.000 - Rp199.999</a></li>
+                  <li><a href="">Rp200.000 - Rp399.999</a></li>
+                </ul>
+              </div>
             </div>
+            <div class="line"></div>
           </div>
           <img src="../image/clothes-asset/poster2.png" alt="" />
         </div>
-        <div class="right-col">
-          <img src="../image/clothes-asset/poster1.png" alt="" />
-          <div class="container">
-            <!-- <div class="row"> -->
-            <div class="cell">
-              <img src="../image/clothes-asset/baju/baju1.png" alt="clothe" />
-              <h1>Rp 299.000</h1>
+        <div class="right-col" id="right-col">
+          <img src="../image/clothes-asset/poster1.png" alt="" class="poster" />
+          <div class="product" id="product">
+            <div class="pro-container">
+              <div class="pro outfit">
+                <img
+                  src="../image/clothes-asset/baju/baju1.png"
+                  alt=""
+                  class="person"
+                />
+                <img
+                  src="../image/clothes-asset/hover/baju1-hover.png"
+                  alt=""
+                  class="hover"
+                />
+                <div>
+                  <img
+                    src="../image/clothes-asset/like.png"
+                    class="likeButton"
+                  />
+                </div>
+                <div class="des">
+                  <p>Regular Fit T-shirt</p>
+                  <p>Rp299,900</p>
+                </div>
+              </div>
+              <div class="pro outfit">
+                <img
+                  src="../image/clothes-asset/baju/baju2.png"
+                  alt=""
+                  class="person"
+                />
+                <img
+                  src="../image/clothes-asset/hover/baju2-hover.png"
+                  alt=""
+                  class="hover"
+                />
+                <div>
+                  <img
+                    src="../image/clothes-asset/like.png"
+                    class="likeButton"
+                  />
+                </div>
+                <div class="des">
+                  <p>Bomber Jacket</p>
+                  <p>Rp319,900</p>
+                </div>
+              </div>
+              <div class="pro shorts">
+                <img
+                  src="../image/clothes-asset/baju/baju3.png"
+                  alt=""
+                  class="person"
+                />
+                <div>
+                  <img
+                    src="../image/clothes-asset/hover/baju3-hover.png"
+                    alt=""
+                    class="hover"
+                  />
+                  <img
+                    src="../image/clothes-asset/like.png"
+                    class="likeButton"
+                  />
+                </div>
+                <div class="des">
+                  <p>Swim Shorts</p>
+                  <p>Rp179,900</p>
+                </div>
+              </div>
+              <div class="pro jeans">
+                <img
+                  src="../image/clothes-asset/baju/baju4.png"
+                  alt=""
+                  class="person"
+                />
+                <img
+                  src="../image/clothes-asset/hover/baju4-hover.png"
+                  alt=""
+                  class="hover"
+                />
+                <div>
+                  <img
+                    src="../image/clothes-asset/like.png"
+                    class="likeButton"
+                  />
+                </div>
+                <div class="des">
+                  <p>White Sting Jeans</p>
+                  <p>Rp299,900</p>
+                </div>
+              </div>
+              <div class="pro suit">
+                <img
+                  src="../image/clothes-asset/baju/baju5.png"
+                  alt=""
+                  class="person"
+                />
+                <img
+                  src="../image/clothes-asset/hover/baju5-hover.png"
+                  alt=""
+                  class="hover"
+                />
+                <div>
+                  <img
+                    src="../image/clothes-asset/like.png"
+                    class="likeButton"
+                  />
+                </div>
+                <div class="des">
+                  <p>Regular Fit Suit</p>
+                  <p>Rp399,900</p>
+                </div>
+              </div>
+              <div class="pro tshirt">
+                <img
+                  src="../image/clothes-asset/baju/baju6.png"
+                  alt=""
+                  class="person"
+                />
+                <img
+                  src="../image/clothes-asset/hover/baju6-hover.png"
+                  alt=""
+                  class="hover"
+                />
+                <div>
+                  <img
+                    src="../image/clothes-asset/like.png"
+                    class="likeButton"
+                  />
+                </div>
+                <div class="des">
+                  <p>Patterned T-Shirt</p>
+                  <p>Rp329,900</p>
+                </div>
+              </div>
+              <div class="pro tshirt">
+                <img
+                  src="../image/clothes-asset/baju/baju7.png"
+                  alt=""
+                  class="person"
+                />
+                <img
+                  src="../image/clothes-asset/hover/baju7-hover.png"
+                  alt=""
+                  class="hover"
+                />
+                <div>
+                  <img
+                    src="../image/clothes-asset/like.png"
+                    class="likeButton"
+                  />
+                </div>
+                <div class="des">
+                  <p>Regular Patterned T-Shirt</p>
+                  <p>Rp299,900</p>
+                </div>
+              </div>
+              <div class="pro tshirt">
+                <img
+                  src="../image/clothes-asset/baju/baju8.png"
+                  alt=""
+                  class="person"
+                />
+                <img
+                  src="../image/clothes-asset/hover/baju8-hover.png"
+                  alt=""
+                  class="hover"
+                />
+                <div>
+                  <img
+                    src="../image/clothes-asset/like.png"
+                    class="likeButton"
+                  />
+                </div>
+                <div class="des">
+                  <p>Regular Fit T-Shirt</p>
+                  <p>Rp269,900</p>
+                </div>
+              </div>
             </div>
-            <div class="cell">
-              <img src="../image/clothes-asset/baju/baju1.png" alt="clothe" />
-              <h1>Rp 299.000</h1>
+            <div class="pro-container">
+              <div class="pro outfit">
+                <img
+                  src="../image/clothes-asset/baju/baju9.png"
+                  alt=""
+                  class="person"
+                />
+                <img
+                  src="../image/clothes-asset/hover/baju9-hover.png"
+                  alt=""
+                  class="hover"
+                />
+                <div>
+                  <img
+                    src="../image/clothes-asset/like.png"
+                    class="likeButton"
+                  />
+                </div>
+                <div class="des">
+                  <p>Regular Fit T-shirt</p>
+                  <p>Rp299,900</p>
+                </div>
+              </div>
+              <div class="pro outfit">
+                <img
+                  src="../image/clothes-asset/baju/baju10.png"
+                  alt=""
+                  class="person"
+                />
+                <img
+                  src="../image/clothes-asset/hover/baju10-hover.png"
+                  alt=""
+                  class="hover"
+                />
+                <div>
+                  <img
+                    src="../image/clothes-asset/like.png"
+                    class="likeButton"
+                  />
+                </div>
+                <div class="des">
+                  <p>Bomber Jacket</p>
+                  <p>Rp319,900</p>
+                </div>
+              </div>
+              <div class="pro shorts">
+                <img
+                  src="../image/clothes-asset/baju/baju11.png"
+                  alt=""
+                  class="person"
+                />
+                <div>
+                  <img
+                    src="../image/clothes-asset/hover/baju11-hover.png"
+                    alt=""
+                    class="hover"
+                  />
+                  <img
+                    src="../image/clothes-asset/like.png"
+                    class="likeButton"
+                  />
+                </div>
+                <div class="des">
+                  <p>Swim Shorts</p>
+                  <p>Rp179,900</p>
+                </div>
+              </div>
+              <div class="pro jeans">
+                <img
+                  src="../image/clothes-asset/baju/baju12.png"
+                  alt=""
+                  class="person"
+                />
+                <img
+                  src="../image/clothes-asset/hover/baju12-hover.png"
+                  alt=""
+                  class="hover"
+                />
+                <div>
+                  <img
+                    src="../image/clothes-asset/like.png"
+                    class="likeButton"
+                  />
+                </div>
+                <div class="des">
+                  <p>White Sting Jeans</p>
+                  <p>Rp299,900</p>
+                </div>
+              </div>
+              <div class="pro suit">
+                <img
+                  src="../image/clothes-asset/baju/baju13.png"
+                  alt=""
+                  class="person"
+                />
+                <img
+                  src="../image/clothes-asset/hover/baju13-hover.png"
+                  alt=""
+                  class="hover"
+                />
+                <div>
+                  <img
+                    src="../image/clothes-asset/like.png"
+                    class="likeButton"
+                  />
+                </div>
+                <div class="des">
+                  <p>Regular Fit Suit</p>
+                  <p>Rp399,900</p>
+                </div>
+              </div>
+              <div class="pro tshirt">
+                <img
+                  src="../image/clothes-asset/baju/baju14.png"
+                  alt=""
+                  class="person"
+                />
+                <img
+                  src="../image/clothes-asset/hover/baju14-hover.png"
+                  alt=""
+                  class="hover"
+                />
+                <div>
+                  <img
+                    src="../image/clothes-asset/like.png"
+                    class="likeButton"
+                  />
+                </div>
+                <div class="des">
+                  <p>Patterned T-Shirt</p>
+                  <p>Rp329,900</p>
+                </div>
+              </div>
+              <div class="pro tshirt">
+                <img
+                  src="../image/clothes-asset/baju/baju15.png"
+                  alt=""
+                  class="person"
+                />
+                <img
+                  src="../image/clothes-asset/hover/baju15-hover.png"
+                  alt=""
+                  class="hover"
+                />
+                <div>
+                  <img
+                    src="../image/clothes-asset/like.png"
+                    class="likeButton"
+                  />
+                </div>
+                <div class="des">
+                  <p>Regular Patterned T-Shirt</p>
+                  <p>Rp299,900</p>
+                </div>
+              </div>
+              <div class="pro tshirt">
+                <img
+                  src="../image/clothes-asset/baju/baju16.png"
+                  alt=""
+                  class="person"
+                />
+                <img
+                  src="../image/clothes-asset/hover/baju16-hover.png"
+                  alt=""
+                  class="hover"
+                />
+                <div>
+                  <img
+                    src="../image/clothes-asset/like.png"
+                    class="likeButton"
+                  />
+                </div>
+                <div class="des">
+                  <p>Regular Fit T-Shirt</p>
+                  <p>Rp269,900</p>
+                </div>
+              </div>
             </div>
-            <div class="cell">
-              <img src="../image/clothes-asset/baju/baju1.png" alt="clothe" />
-              <h1>Rp 299.000</h1>
-            </div>
-            <!-- </div> -->
-            <!-- <div class="row"> -->
-            <div class="cell">
-              <img src="../image/clothes-asset/baju/baju1.png" alt="clothe" />
-              <h1>Rp 299.000</h1>
-            </div>
-            <div class="cell">
-              <img src="../image/clothes-asset/baju/baju1.png" alt="clothe" />
-              <h1>Rp 299.000</h1>
-            </div>
-            <div class="cell">
-              <img src="../image/clothes-asset/baju/baju1.png" alt="clothe" />
-              <h1>Rp 299.000</h1>
-            </div>
-            <!-- </div> -->
-            <!-- <div class="row"> -->
-            <div class="cell">
-              <img src="../image/clothes-asset/baju/baju1.png" alt="clothe" />
-              <h1>Rp 299.000</h1>
-            </div>
-            <div class="cell">
-              <img src="../image/clothes-asset/baju/baju1.png" alt="clothe" />
-              <h1>Rp 299.000</h1>
-            </div>
-            <!-- </div> -->
           </div>
-          <div class="slide">
-            <button>Load More</button>
+          <div class="load">
+            <button class="load-btn" onclick="load()">
+              Load More Products
+            </button>
           </div>
         </div>
       </div>
-      <!-- <div></div> -->
-      <section>
-        <h2>Featured Products</h2>
-        <div class="pro-container">
-          <div class="pro">
-            <img src="../image/clothes-asset/baju/baju1.png" alt="">
-            <div class="liked">
-              <img src="../image/clothes-asset/like.png" alt="like-button"
-              onclick="this.src = ((this.src == 'https://github.com/whizt/HCI_Assignment/blob/main/image/clothes-asset/liked.png') 
-              ? 'like.png' : 'liked.png');">
-            </div>
-            <div class="des">
-              <p>Regular Fit T-shirt</p><br>
-              <p>Rp299,900</p>
-            </div>
-          </div>
-        </div>
-      </section>
       <footer>
         <div class="footer-content">
           <div class="container">
@@ -371,5 +697,6 @@
     <script src="../js/suggestions.js"></script>
     <script src="../js/loader.js"></script>
     <script src="../js/app.js"></script>
+    <script src="../js/clothes.js"></script>
   </body>
 </html>

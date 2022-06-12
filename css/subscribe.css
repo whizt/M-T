@@ -1,0 +1,23 @@
+.subscribe{
+    position: fixed;
+    z-index: 6000;
+    /* background-color: #000000; */
+    opacity: 0.8;
+}
+.subscribe .background{
+    width: 100%;
+    height: 100%;
+}
+.subscribe .container{
+    width: 100vw;
+    height: 100vh;
+    padding: 86px;
+    color: aliceblue;
+    overflow: hidden;
+    background-color: #000000;
+    z-index: 6000;
+}
+.subscribe .container img{
+    opacity: 1;
+    width: 250px;
+}
