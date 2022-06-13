@@ -1,24 +1,70 @@
 // Navbar Dropdown
-function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
-  document.getElementById("myDropbtn").classList.toggle("rotate");
+var dropdownCheck = true;
+function rotateShow(){
+  if(dropdownCheck){
+    document.getElementById("myDropbtn").style.rotate = "90deg";
+    document.getElementById("myDropdown").style.display = "block";
+    dropdownCheck = false;
+  }else{
+    document.getElementById("myDropbtn").style.rotate = "0deg";
+    document.getElementById("myDropdown").style.display = "none";
+    dropdownCheck = true;
+  }
+  
 }
 
-window.onclick = function (event) {
-  if (!event.target.matches(".dropbtn")) {
-    var dropclick = document.getElementsByClassName("dropbtn");
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      var rotateDropbtn = dropclick[i];
-      if (openDropdown.classList.contains("show")) {
-        openDropdown.classList.remove("show");
-        rotateDropbtn.classList.remove("rotate");
-      }
-    }
+var newCheck = true;
+var shopCheck = true;
+var collectCheck = true;
+var saleCheck = true;
+function wNew() {
+  if (newCheck) {
+    document.getElementById("new-content").style.display = "flex";
+    document.getElementById("shop-content").style.display = "none";
+    document.getElementById("collection-content").style.display = "none";
+    document.getElementById("sale-content").style.display = "none";
+    newCheck = false;
+  } else {
+    document.getElementById("new-content").style.display = "none";
+    newCheck = true;
   }
-};
+}
+function shop() {
+  if (shopCheck) {
+    document.getElementById("shop-content").style.display = "flex";
+    document.getElementById("collection-content").style.display = "none";
+    document.getElementById("sale-content").style.display = "none";
+    document.getElementById("new-content").style.display = "none";
+    shopCheck = false;
+  } else {
+    document.getElementById("shop-content").style.display = "none";
+    shopCheck = true;
+  }
+}
+function collect() {
+  if (collectCheck) {
+    document.getElementById("collection-content").style.display = "flex";
+    document.getElementById("sale-content").style.display = "none";
+    document.getElementById("new-content").style.display = "none";
+    document.getElementById("shop-content").style.display = "none";
+    collectCheck = false;
+  } else {
+    document.getElementById("collection-content").style.display = "none";
+    collectCheck = true;
+  }
+}
+function sale() {
+  if (saleCheck) {
+    document.getElementById("sale-content").style.display = "flex";
+    document.getElementById("new-content").style.display = "none";
+    document.getElementById("shop-content").style.display = "none";
+    document.getElementById("collection-content").style.display = "none";
+    saleCheck = false;
+  } else {
+    document.getElementById("sale-content").style.display = "none";
+    saleCheck = true;
+  }
+}
 
 // Search Bar
 const searchWrapper = document.querySelector(".search-input");

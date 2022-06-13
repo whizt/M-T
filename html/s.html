@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/subscribe.css">
+    <style>*{margin: 0;}</style>
+</head>
+<body>
+    <div class="subscription" id="overlay" onclick="off()">
+        <div class="container">
+            <img src="../image/sub-asset/background.png" alt="">
+            <div class="form">
+                <h1>SUBSCRIPTION</h1>
+                <p>Subscribe to get the first information about our<br>
+                    product, special offers, and know the latest<br>
+                    fashion news</p>
+                    <h6>Let's get all your required information</h6>
+                    <form action="">
+                        <div class="row">
+                            <div class="col">
+                                <label for="name">Name</label><br>
+                                <input type="text" placeholder="ex. John Doe" id="name" name="name" class="input">&nbsp;&nbsp;
+                                <div class="line"></div>
+                              </div>
+                            <div class="col">
+                                <label for="email">Email</label><br>
+                                <input type="text" placeholder="ex. john@gmail.com" id="email" name="email" class="input">
+                                <div class="line"></div>
+                              </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col">
+                                <label for="pwd">Password</label><br>
+                                <input type="password" placeholder="ex. JohnDoe123" id="pwd" name="pwd" class="input">&nbsp;&nbsp;
+                                <div class="line"></div>
+                              </div>
+                            <div class="col">
+                                <label for="country">Country</label><br>
+                                <input type="text" placeholder="ex. United States" id="country" name="country" class="input">
+                                <div class="line"></div>
+                              </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col">
+                        <label for="phone">Phone Number</label><br>
+                        <input type="tel" placeholder="Phone Number" id="phone" class="input">&nbsp;&nbsp;
+                        <div class="line"></div>
+                      </div>
+                    <div class="col">
+                        <label for="birth">Birthday</label><br>
+                        <input type="date" id="birth" name="birth" class="input">
+                        <div class="line"></div>
+                    </div>
+                </div>
+                <br>
+                <label for="termsCondition">Read <a href="https://www.google.com">terms and conditions.</a></label><br><br>
+                <input type="checkbox" id="termsCondition" name="termsCondition"> Yes, I agree with terms and conditions.</input>
+                <br><br>
+                <input type="submit" value="SUBSCRIBE" id="submit" name="submit">
+               </form>
+        </div>
+    </div>
+    </div>
+    <script src="../js/subscribe.js"></script>
+</body>
+</html>

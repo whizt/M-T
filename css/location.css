@@ -21,7 +21,6 @@ body{
 }
 .location-container .inner-container{
     width: 100%;
-    /* margin: auto; */
 }
 .location-container .second-container{
     max-width: 1242px;
@@ -35,7 +34,6 @@ body{
     text-transform: capitalize;
 }
 .location-container .link-satu{
-    /* background-color: blanchedalmond; */
     text-decoration: underline;
     color: black;
 }
@@ -43,7 +41,6 @@ body{
     color: black;
 }
 .location-container .linked{
-    /* background-color: yellow; */
     text-transform: capitalize;
     font-size: 1.183431952662722vw;
     margin-left: 140px;
@@ -52,19 +49,16 @@ body{
 .location-container h1{
     text-align: center;
     text-transform: capitalize;
-    /* background-color: aqua; */
     margin-top: 0.46022353714661407vw;
 }
 .location-container .row{
     display: flex;
-    /* flex-wrap: wrap; */
     overflow: hidden;
 }
 .location-container ul{
     list-style: none;
     margin-right: 390px;
     margin-left: 10px;
-    /* background-color: aqua; */
 }
 .location-container ul li a{
     text-decoration: underline;
@@ -73,7 +67,6 @@ body{
     margin-bottom: 10px;
     display: block;
     text-transform: capitalize;
-    /* background-color: aquamarine; */
 }
 
 

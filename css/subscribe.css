@@ -1,23 +1,100 @@
-.subscribe{
-    position: fixed;
-    z-index: 6000;
-    /* background-color: #000000; */
-    opacity: 0.8;
+@import url("https://fonts.googleapis.com/css2?family=Metal&family=Vollkorn+SC:wght@700&display=swap");
+
+#overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 6000;
+  cursor: pointer;
 }
-.subscribe .background{
-    width: 100%;
-    height: 100%;
+.subscription {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: 6000;
 }
-.subscribe .container{
-    width: 100vw;
-    height: 100vh;
-    padding: 86px;
-    color: aliceblue;
-    overflow: hidden;
-    background-color: #000000;
-    z-index: 6000;
+.subscription .container {
+  cursor: default;
+  margin: 50px;
+  display: flex;
+  justify-content: center;
 }
-.subscribe .container img{
-    opacity: 1;
-    width: 250px;
+.subscription .container img {
+  height: 100%;
+  max-height: 850px;
+}
+.subscription .form .row {
+  display: flex;
+}
+.subscription .form {
+  background-color: #ffffff;
+  overflow: scroll;
+  text-align: left;
+  padding: 50px;
+  max-height: 850px;
+}
+.subscription .form h1 {
+  font-size: 30px;
+  font-family: "Vollkorn SC", serif;
+  font-weight: bold;
+}
+
+.subscription .form p {
+  line-height: 35px;
+  font-family: "Metal", cursive;
+  font-size: 20px;
+}
+.subscription .form h6 {
+    padding: 10px 0;
+    line-height: 35px;
+    text-decoration: underline;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+    font-size: 18px;
+  }
+.subscription .form #submit {
+  font-size: 18px;
+  border: none;
+  font-family: "Vollkorn SC", serif;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #000000;
+  padding: 8px 40px;
+  cursor: pointer;
+}
+.subscription .form .input{
+    font-family: 'Roboto', sans-serif;
+    padding: 5px;
+    border-radius: 0;
+    border: none;
+    border-style: none;
+}
+.subscription .form .input#birth{
+    font-weight: 500;
+    color: #797979;
+    cursor: pointer;
+    padding-right: 60px;
+}
+.subscription .form .line{
+    margin-top: 5px;
+    width: 90%;
+    height: 1px;
+    background-color: #BDBDBD;
+}
+.subscription .form #termsCondition{
+    cursor: pointer;
+}
+.subscription .form label{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+.subscription .form a{
+    text-decoration: none;
+    color: #020074;
 }

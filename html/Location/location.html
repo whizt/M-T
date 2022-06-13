@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../../css/footer.css" />
     <link rel="stylesheet" href="../../css/location.css" />
     <link rel="stylesheet" href="../../css/loader.css" />
+    <link rel="stylesheet" href="../../css/subscribe.css" />
     <title>Location - M&T | Find Us Anywhere Around The Globe</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -21,6 +22,63 @@
     />
   </head>
   <body>
+    <div class="subscription" id="overlay" onclick="off()">
+      <div class="container">
+          <img src="../../image/sub-asset/background.png" alt="">
+          <div class="form">
+              <h1>SUBSCRIPTION</h1>
+              <p>Subscribe to get the first information about our<br>
+                  product, special offers, and know the latest<br>
+                  fashion news</p>
+                  <h6>Let's get all your required information</h6>
+                  <form action="">
+                      <div class="row">
+                          <div class="col">
+                              <label for="name">Name</label><br>
+                              <input type="text" placeholder="ex. John Doe" id="name" name="name" class="input">&nbsp;&nbsp;
+                              <div class="line"></div>
+                            </div>
+                          <div class="col">
+                              <label for="email">Email</label><br>
+                              <input type="text" placeholder="ex. john@gmail.com" id="email" name="email" class="input">
+                              <div class="line"></div>
+                            </div>
+                      </div>
+                      <br>
+                      <div class="row">
+                          <div class="col">
+                              <label for="pwd">Password</label><br>
+                              <input type="password" placeholder="ex. JohnDoe123" id="pwd" name="pwd" class="input">&nbsp;&nbsp;
+                              <div class="line"></div>
+                            </div>
+                          <div class="col">
+                              <label for="country">Country</label><br>
+                              <input type="text" placeholder="ex. United States" id="country" name="country" class="input">
+                              <div class="line"></div>
+                            </div>
+              </div>
+              <br>
+              <div class="row">
+                  <div class="col">
+                      <label for="phone">Phone Number</label><br>
+                      <input type="tel" placeholder="Phone Number" id="phone" class="input">&nbsp;&nbsp;
+                      <div class="line"></div>
+                    </div>
+                  <div class="col">
+                      <label for="birth">Birthday</label><br>
+                      <input type="date" id="birth" name="birth" class="input">
+                      <div class="line"></div>
+                  </div>
+              </div>
+              <br>
+              <label for="termsCondition">Read <a href="https://www.google.com">terms and conditions.</a></label><br><br>
+              <input type="checkbox" id="termsCondition" name="termsCondition"> Yes, I agree with terms and conditions.</input>
+              <br><br>
+              <input type="submit" value="SUBSCRIBE" id="submit" name="submit">
+             </form>
+      </div>
+  </div>
+  </div>
     <div class="loading">
       <div class="gooey">
         <span class="dot"></span>
@@ -41,7 +99,7 @@
                 <li><a href="../about.html"> About Us </a></li>
                 <li><a href="../clothes.html"> Clothes </a></li>
                 <li><a href="../Location/location.html"> Locations </a></li>
-                <li><a href="#"> Subscribe </a></li>
+                <li><a href="#" onclick="on()"> Subscribe </a></li>
               </ul>
             </div>
           </div>
@@ -51,10 +109,10 @@
               alt="hamburger"
               id="myDropbtn"
               class="dropbtn"
-              onclick="myFunction()"
+              onclick="rotateShow()"
               class="dropbtn"
             />
-            <a href="../../html/index.html" class="logo"
+            <a href="../html/index.html" class="logo"
               ><img src="../../image/global-asset/Logo1.png" alt="logo" />
               <p>Putting Out Your Best Fit</p>
             </a>
@@ -85,11 +143,11 @@
           <div id="myDropdown" class="dropdown-content">
             <div class="nav-links">
               <ul>
-                <li class="new links"><p>WHAT'S NEW</p></li>
-                <li class="shop links"><p>SHOP</p></li>
-                <li class="collection links"><p>BY COLLECTION</p></li>
-                <li class="sale links"><p>SALE</p></li>
-                <div class="new-content nav-links-content">
+                <li class="links" id="new" onclick="wNew()"><p>WHAT'S NEW</p></li>
+                <li class="links" id="shop" onclick="shop()"><p>SHOP</p></li>
+                <li class="links" id="collection" onclick="collect()"><p>BY COLLECTION</p></li>
+                <li class="links" id="sale" onclick="sale()"><p>SALE</p></li>
+                <div class="nav-links-content" id="new-content">
                   <ul>
                     <li><a href="../clothes.html">Shirt</a></li>
                   </ul>
@@ -106,7 +164,7 @@
                     <li><a href="../clothes.html">Shoes & Accessories</a></li>
                   </ul>
                 </div>
-                <div class="shop-content nav-links-content">
+                <div class="nav-links-content" id="shop-content">
                   <ul>
                     <li><a href="../clothes.html">T-Shirt & Vests</a></li>
                     <li><a href="../clothes.html">Lounge Wear</a></li>
@@ -137,7 +195,7 @@
                     <li><a href="../clothes.html">Shoes</a></li>
                   </ul>
                 </div>
-                <div class="collection-content nav-links-content">
+                <div class="nav-links-content" id="collection-content">
                   <ul>
                     <li><a href="../clothes.html">M&T x SUPREME</a></li>
                     <li><a href="../clothes.html">M&T x KAWS</a></li>
@@ -162,7 +220,7 @@
                     <li><a href="../clothes.html">M&T Spring</a></li>
                   </ul>
                 </div>
-                <div class="sale-content nav-links-content">
+                <div class="nav-links-content" id="sale-content">
                   <ul>
                     <li><a href="../clothes.html">Shirt</a></li>
                   </ul>
@@ -289,5 +347,6 @@
     <script src="../../js/app.js"></script>
     <script src="../../js/suggestions.js"></script>
     <script src="../../js/loader.js"></script>
+    <script src="../../js/subscribe.js"></script>
   </body>
 </html>

@@ -63,14 +63,9 @@ nav {
   width: 25.8px;
   cursor: pointer;
 }
-.dropbtn {
+.head-navbar .dropbtn {
   cursor: pointer;
-}
-.rotate {
-  transform: rotate(90deg);
   transition: ease 0.1s;
-  -webkit-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
 }
 .head-navbar .right-menu{
   display: flex;
@@ -175,32 +170,28 @@ nav {
 }
 .dropdown-content .nav-links ul li.links:hover {
   color: #000000;
-  cursor: default;
+  cursor: pointer;
 }
 .nav-links-content {
   display: none;
   padding-top: 2%;
   font-size: 12px;
 }
-.dropdown-content .new:hover ~ .new-content {
-  display: block;
-  z-index: 10000;
-  transition: ease;
+.dropdown-content #new-content {
+  display: none;
+  justify-content: center;
 }
-.dropdown-content .shop:hover ~ .shop-content {
-  display: block;
-  z-index: 10000;
-  transition: ease;
+.dropdown-content#shop-content {
+  display: none;
+  justify-content: center;
 }
-.dropdown-content .collection:hover ~ .collection-content {
-  display: block;
-  z-index: 10000;
-  transition: ease;
+.dropdown-content #collection-content {
+  display: none;
+  justify-content: center;
 }
-.dropdown-content .sale:hover ~ .sale-content {
-  display: block;
-  z-index: 10000;
-  transition: ease;
+.dropdown-content #sale-content {
+  display: none;
+  justify-content: center;
 }
 
 /* MORE DROPDOWN CONTENT */
