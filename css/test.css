@@ -5,6 +5,14 @@
     box-sizing: border-box;
 }
 
+.header{
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1000000;
+}
+
 .menu-bar{
     background-color: #F4F3F1;
     text-align: center;
