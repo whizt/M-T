@@ -120,6 +120,7 @@ footer{
     padding-top: 10px;
     font-size: 20px;
     font-family: 'Telex', sans-serif;
+    cursor: pointer;
     font-weight: 400;
     text-transform: capitalize;
 }

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../css/navbar.css" />
     <link rel="stylesheet" href="../css/footer.css" />
     <link rel="stylesheet" href="../css/about.css" />
+    <link rel="stylesheet" href="../css/test.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
     <title>About Us | M&T</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -17,152 +18,126 @@
     />
 </head>
 <body>
-  <div class="navbar">
-    <nav>
-      <div class="top-navbar">
-        <div class="nav-links">
-          <ul>
-            <li><a href="./index.html"> Home </a></li>
-            <li><a href="./about.html"> About Us </a></li>
-            <li><a href="./clothes.html"> Clothes </a></li>
-            <li><a href="./location.html"> Locations </a></li>
-            <li><a href="#"> Subscribe </a></li>
-          </ul>
+
+  <div class="menu-bar">
+    <div class="top-menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Clothes</a></li>
+            <li><a href="#">Locations</a></li>
+            <li><a href="#">Subscribe</a></li>
+        </ul>
+    </div>
+
+    <div class="search-bar">
+        <div class="hamburger">
+            <img src="../image/global-asset/hamburger.png" alt="Hamburger">
         </div>
-      </div>
-      <div class="head-navbar">
-        <img
-          src="../image/global-asset/hamburger.png"
-          alt="hamburger"
-          id="myDropbtn"
-          class="dropbtn"
-          onclick="myFunction()"
-          class="dropbtn"
-        />
-        <a href="../html/index.html" class="logo"
-          ><img src="../image/global-asset/Logo.png" alt="logo" />
-          <p>Putting Out Your Best Fit</p>
-        </a>
-        <div class="right-menu">
-          <input type="text" placeholder="Search Products" />
-          <a href="#"
-            ><img src="../image/global-asset/cart.png" alt="cart"
-          /></a>
-          <a href="#"
-            ><img src="../image/global-asset/liked.png" alt="liked"
-          /></a>
+        <div class="merek">
+            <img src="../image/global-asset/Logo.png" alt="M&T">
+            <h1>Putting out your best fit</h1>
         </div>
-      </div>
-      <div id="myDropdown" class="dropdown-content">
-        <div class="nav-links">
-          <ul>
-            <li class="new links"><p>WHAT'S NEW</p></li>
-            <li class="shop links"><p>SHOP</p></li>
-            <li class="collection links"><p>BY COLLECTION</p></li>
-            <li class="sale links"><p>SALE</p></li>
-            <div class="new-content nav-links-content">
-              <ul>
-                <li><a href="./clothes.html">Shirt</a></li>
-              </ul>
-              <ul>
-                <li><a href="./clothes.html">Jeans</a></li>
-              </ul>
-              <ul>
-                <li><a href="./clothes.html">Boots</a></li>
-              </ul>
-              <ul>
-                <li><a href="./clothes.html">Hoodie</a></li>
-              </ul>
-              <ul>
-                <li><a href="./clothes.html">Shoes & Accessories</a></li>
-              </ul>
-            </div>
-            <div class="shop-content nav-links-content">
-              <ul>
-                <li><a href="./clothes.html">T-Shirt & Vests</a></li>
-                <li><a href="./clothes.html">Lounge Wear</a></li>
-                <li><a href="./clothes.html">Hoodies & Sweatshirts</a></li>
-              </ul>
-              <ul>
-                <li><a href="./clothes.html">Basics</a></li>
-                <li><a href="./clothes.html">Hats</a></li>
-                <li><a href="./clothes.html">Socks</a></li>
-              </ul>
-              <ul>
-                <li><a href="./clothes.html">Jeans</a></li>
-                <li><a href="./clothes.html">Sportwear</a></li>
-                <li><a href="./clothes.html">Blazers & Suits</a></li>
-              </ul>
-              <ul>
-                <li><a href="./clothes.html">Shirts</a></li>
-                <li><a href="./clothes.html">Jackets & Coats</a></li>
-                <li><a href="./clothes.html">Premium Quality</a></li>
-              </ul>
-              <ul>
-                <li><a href="./clothes.html">Trousers</a></li>
-                <li><a href="./clothes.html">Underwear</a></li>
-                <li><a href="./clothes.html">View All</a></li>
-              </ul>
-              <ul>
-                <li><a href="./clothes.html">Shorts</a></li>
-                <li><a href="./clothes.html">Shoes</a></li>
-              </ul>
-            </div>
-            <div class="collection-content nav-links-content">
-              <ul>
-                <li><a href="./clothes.html">M&T x SUPREME</a></li>
-                <li><a href="./clothes.html">M&T x KAWS</a></li>
-                <li><a href="./clothes.html">M&T x MARVEL</a></li>
-              </ul>
-              <ul>
-                <li><a href="./clothes.html">M&T Moshi</a></li>
-                <li><a href="./clothes.html">M&T Sakura</a></li>
-                <li><a href="./clothes.html">M&T x NIKE</a></li>
-              </ul>
-              <ul>
-                <li><a href="./clothes.html">M&T Animal</a></li>
-                <li><a href="./clothes.html">M&T Starcost</a></li>
-                <li><a href="./clothes.html">M&T x GUCCI</a></li>
-              </ul>
-              <ul>
-                <li><a href="./clothes.html">M&T Spaceship</a></li>
-                <li><a href="./clothes.html">M&T Winter</a></li>
-              </ul>
-              <ul>
-                <li><a href="./clothes.html">M&T Summer</a></li>
-                <li><a href="./clothes.html">M&T Spring</a></li>
-              </ul>
-            </div>
-            <div class="sale-content nav-links-content">
-              <ul>
-                <li><a href="./clothes.html">Shirt</a></li>
-              </ul>
-              <ul>
-                <li><a href="./clothes.html">Jeans</a></li>
-              </ul>
-              <ul>
-                <li><a href="./clothes.html">Boots</a></li>
-              </ul>
-              <ul>
-                <li><a href="./clothes.html">Hoodie</a></li>
-              </ul>
-              <ul>
-                <li><a href="./clothes.html">Shoes & Accessories</a></li>
-              </ul>
-            </div>
-          </ul>
+        
+        <div class="search-box">
+            <input class="search-txt" type="text" name="" placeholder="Search Products">
+            <a href="#" class="search-btn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </a>
         </div>
-        <!-- <div class="nav-links-content"> -->
-  
-        <!-- </div> -->
-      </div>
-      <div class="background-bar">
-        <div id="progress-bar">
-          
+        <div class="tombol">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <i class="fa-solid fa-heart"></i>
         </div>
-      </div>
-    </nav>
-  </div>
+    </div>
+    
+
+
+    <div class="sec-menu">
+        <ul>
+            <li><a href="#">What's New</a>    
+                <div class="sub-menu-1">
+                    <div class="block">
+                        <ul>
+                            <li><a href="#">Shirt</a></li>
+                            <li><a href="#">Jeans</a></li>
+                            <li><a href="#">Boots</a></li>
+                            <li><a href="#">Hoodie</a></li>
+                            <li><a href="#">Shoes & Accessories</a></li>
+                        </ul>
+                    </div>
+                </div>        
+            </li>
+            <li><a href="#">Shop</a>
+                <div class="sub-menu-2">
+                    <div class="block">
+                        <ul>
+                            <li><a href="#">T-Shirt & Vests</a></li>
+                            <li><a href="#">Shirts</a></li>
+                            <li><a href="#">Jeans</a></li>
+                            <li><a href="#">Shirts</a></li>
+                            <li><a href="#">Trousers</a></li>
+                            <li><a href="#">Shorts</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">Lounge Wear</a></li>
+                            <li><a href="#">Hats</a></li>
+                            <li><a href="#">Sportwear</a></li>
+                            <li><a href="#">Jackets & Coats</a></li>
+                            <li><a href="#">Underwear</a></li>
+                            <li><a href="#">Shoes</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">Hoodies & Sweatshirts Wear</a></li>
+                            <li><a href="#">Socks</a></li>
+                            <li><a href="#">Blazers & Suits</a></li>
+                            <li><a href="#">Premium Quality</a></li>
+                            <li><a href="#">Shoes</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li><a href="#">BY COLLECTION</a>
+                <div class="sub-menu-2" id="dua">
+                    <div class="block">
+                        <ul>
+                            <li><a href="#">M&T x SUPREME</a></li>
+                            <li><a href="#">M&T Moshi</a></li>
+                            <li><a href="#">M&T Animal</a></li>
+                            <li><a href="#">M&T Spaceship</a></li>
+                            <li><a href="#">M&T Summer</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">M&T x KAWS</a></li>
+                            <li><a href="#">M&T Sakura</a></li>
+                            <li><a href="#">M&T Starcost</a></li>
+                            <li><a href="#">M&T Winter</a></li>
+                            <li><a href="#">M&T Spring</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">M&T x MARVEL</a></li>
+                            <li><a href="#">M&T x NIKE</a></li>
+                            <li><a href="#">M&T x GUCCI</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li><a href="#"></i>SALE</a>
+                <div class="sub-menu-1" id="dua">
+                    <div class="block">
+                        <ul>
+                            <li><a href="#">Shirt</a></li>
+                            <li><a href="#">Jeans</a></li>
+                            <li><a href="#">Socks</a></li>
+                            <li><a href="#">Jackets</a></li>
+                            <li><a href="#">Shoes & Accessories</a></li>
+                        </ul>
+                    </div>
+                </div>  
+            </li>
+        </ul>
+    </div>
+</div>
 
     <div class="top1">
       <div class="container">
