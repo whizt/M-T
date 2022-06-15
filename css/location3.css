@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #F4F3F1;
+    font-family: 'Merriweather', serif;
+}
+
+.location-container{
+    padding-top: 200px;
+}
+
+.location-container .linked{
+    text-transform: capitalize;
+    font-size: 1.183431952662722vw;
+    font-weight: 400;
+    margin-left: 140px;
+    margin-top: 1.1875em;
+}
+
+.location-container .link-satu{
+    text-decoration: underline;
+    color: black;
+}
+
+.location-container .link-dua{
+    color: black;
+    text-decoration: none;
+    cursor: auto;
+}
+
+.location-container h1{
+    text-align: center;
+    text-transform: capitalize;
+    margin-top: 2.1176857330703485vw;
+    margin-bottom: 4.8928336620644313vw ;
+}
+
+
+.image-container{
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.image-container .card{
+    /* background: white; */
+    width: 370px;
+    /* height: 400px; */
+    margin: 0 28px 35px 28px;
+    border-radius: 15px;
+}
+
+.image-container .card-image{
+    /* background-color: aqua; */
+    height: 270px;
+    margin-bottom: 8px;
+    background-size: cover;
+    border-radius: 5px;
+}
+
+.loc-1{
+    background-image: url(../image/location-asset/location-5.png);
+}
+
+.loc-2{
+    background-image: url(../image/location-asset/location-7.png);
+}
+
+.loc-3{
+    background-image: url(../image/location-asset/location-8.png);
+}
+
+.loc-4{
+    background-image: url(../image/location-asset/location-3.png);
+}
+
+.loc-5{
+    background-image: url(../image/location-asset/location-2.png);
+}
+
+.loc-6{
+    background-image: url(../image/location-asset/location-4.png);
+}
+
+.loc-7{
+    background-image: url(../image/location-asset/location-9.png);
+}
+
+.loc-8{
+    background-image: url(../image/location-asset/location-1.png);
+}
+
+.loc-9{
+    background-image: url(../image/location-asset/location-6.png);
+}
+
+.image-container .card h2{
+    /* padding: 10px; */
+    padding: 0 5px;
+    color: #000000;
+    font-weight: 500;
+    padding-bottom: 5px;
+}
+
+.image-container .card p{
+    padding: 0 5px;
+    line-height: 23px;
+    color: #7D7D7D;
+}
+
+.image-container .card .buka{
+    color: #128A09;
+    font-weight: 500;
+}
+
+.image-container .card .tutup{
+    color: #D43F28;
+    font-weight: 500;
+}
+
+.image-container .tombol-satu{
+    width: 60px;
+    height: 35px;
+    font-size: 16px;
+    position: absolute;
+    text-transform: uppercase;
+    margin-top: -43px;
+    margin-left: 10px;
+    background-color: #000000;
+    color: white;
+    transition: 0.2s ease-out;
+    border: none;
+}
+
+.image-container .tombol-dua{
+    border: none;
+    text-transform: uppercase;
+    width: 146px;
+    height: 35px;
+    transition: 0.2s ease-out;
+    font-size: 16px;
+    position: absolute;
+    margin-top: -43px;
+    margin-left: 80px;
+    background-color: #000000;
+    color: white;
+}
+
+.image-container .gelap{
+    width: 370px;
+    height: 270px;
+    background-color: #000000;
+    border-radius: 5px;
+    /* position: absolute; */
+    margin-top: -404px;
+    opacity: 30%;
+}
+
+.image-container .tombol-satu:hover,
+.image-container .tombol-dua:hover{
+    cursor: pointer;
+    background-color: #595959;
+    border: 0;
+}
+
+.image-container .gabung{
+    height: 405px;
+    opacity: 0;
+    transition: 1s ease-out;
+    cursor: pointer;
+}
+
+.image-container .gabung:hover{
+    cursor: pointer;
+    opacity: 100;
+}
+
+.image-container .content{
+    cursor: pointer;
+}
